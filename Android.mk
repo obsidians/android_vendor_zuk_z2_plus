@@ -30,6 +30,17 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libqminvapi
+LOCAL_MODULE_OWNER := zuk
+LOCAL_SRC_FILES_64 := vendor/system/lib64/libqminvapi.so
+LOCAL_SRC_FILES_32 := vendor/system/lib/libqminvapi.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := zuk
 LOCAL_SRC_FILES_64 := vendor/system/vendor/lib64/libtime_genoff.so
